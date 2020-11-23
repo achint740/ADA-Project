@@ -1,0 +1,118 @@
+body{
+  background-color: rgb(238, 237, 237);
+}
+
+input, select{
+  padding : 10px;
+  margin: 10px;
+}
+
+/* Vertical NAV CSS Starts */
+.vertical {
+  list-style-type: none;
+  margin-top: 6%;
+  width: 15%;
+  background-color: whitesmoke;
+  position: fixed;
+  height:95%;
+  overflow: auto;
+  border-right: 3px solid #000;
+  padding-right: 0%;
+  padding-top: 0.5%;
+  padding-left: 0%;
+}
+
+.vertical img{
+  border-radius: 20%;
+}
+.vertical li{
+  margin-left: 10%;
+}
+.vertical a{
+  display: block;
+  color: rgb(236, 14, 14);
+  border: 0px;
+  background-color: whitesmoke;
+  padding: 8px;
+  font-weight: bolder;
+  text-decoration: none;
+  text-align: center;
+}
+
+.vertical a.active{
+  background-color: #313de9;
+  color: white;
+  border-radius: 50%;
+}
+
+.vertical a:hover:not(.active) {
+  background-color: rgb(60, 63, 236);
+  border-radius: 50%;
+  color: white;
+}
+
+/* Vertical Nav CSS Ends*/
+
+
+.afternav {
+  padding-left: 17%;
+  padding-bottom: 3%;
+  padding-top: 6%;
+}
+
+#customers_table{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#orders_table{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#jobs_table{
+  width : 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#mydiv{
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#customers_div{
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#orders_div{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#filter {
+  width: 100%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+#filter1{
+  width: 68%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+#add{
+  height: 52px;   
+  width: 31%;
+}

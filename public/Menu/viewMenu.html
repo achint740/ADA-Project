@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- <script src="../scripts/jquery.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+     <!-- BootStrap Use Link  -->
+
+    
+   
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    
+
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> --> -->
+   
+    
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/styleMenu.css">
+</head>
+<body>
+
+    <!-- // ---------------------------------------------  NAV BAR STARTS------------------------------------------------- // -->
+    <nav class="navbar navbar-expand-lg bg-dark styleNav" >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            <!-- // --------------------------------------------- Restaurant Logo & Name -----------------------------------//-->
+            <ul class="navbar-brand navbar-nav mr-auto">
+                <a  class="navbar-brand" href="/">
+                <!-- <span id="dtu" class="nav-item">Food BuFF</span> 
+                <img src="Images/fs.jpg" style="height:2em;"> -->
+                <img src="../Images/Logo.png" style="height:10em">
+                </a>
+            </ul>
+
+
+            <!-- // --------------------------------------------- BUTTONS -------------------------------------------------//-->
+            <ul class="navbar-nav">
+
+                <!-- // --------------------------------------------- HOME ----------------------------------------------------//-->
+                <li class="nav-item active">
+                    <a class="nav-link xyz" id="home" href="/">
+                        Home
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg>
+                    </a>
+                </li> 
+
+
+                <!-- // --------------------------------------------- ABOUT US ------------------------------------------------//-->
+                <li class="nav-item active">
+                    <a class="nav-link xyz" id="abt" href="#">
+                        About Us
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sunglasses" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 5a2 2 0 0 0-2 2v.5H.5a.5.5 0 0 0 0 1H1V9a2 2 0 0 0 2 2h1a3 3 0 0 0 3-3 1 1 0 1 1 2 0 3 3 0 0 0 3 3h1a2 2 0 0 0 2-2v-.5h.5a.5.5 0 0 0 0-1H15V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-1.888 1.338A1.99 1.99 0 0 0 8 6a1.99 1.99 0 0 0-1.112.338A2 2 0 0 0 5 5H3zm0 1a1 1 0 0 0-1 1v.941c0 .264.356.348.474.112l.228-.457a2 2 0 0 1 .894-.894l.457-.228C4.289 6.356 4.205 6 3.94 6H3z"/>
+                        </svg>
+                    </a>
+                </li>
+
+
+                <!-- // --------------------------------------------- DropDown MENU------------------------------------------------- // -->
+                <div class="dropdown">
+                    <li class="nav-item dropbtn" >
+                        <a class="nav-link xyz" id="menu" href="#">
+                        Menu
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                        </svg>
+                        </a> 
+                        <!-- <div class="dropdown-content">
+                            <a class="nav-link active xyz1" href="./starters/index.html">Starters</a><hr color="white">
+                            <a class="nav-link active xyz1" href="./mainCourse/index.html">Main Course</a><hr color="white">
+                            <a class="nav-link active xyz1" href="./desert/index.html">Dessert</a><hr color="white">
+                            <a class="nav-link active xyz1" href="./drinks/index.html">Drinks</a><hr color="white">
+                        </div> -->
+                    </li>
+                </div>
+                
+
+                
+
+
+                <!-- // --------------------------------------------- CART ------------------------------------------------- // -->
+                <li class="nav-item active">
+                    <a class="nav-link xyz" id="Cart" href="../CartView/index.html">
+                        Cart
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                        </svg>
+                    </a>
+                </li>
+
+
+                <!-- // --------------------------------------------- LOGIN ------------------------------------------------- // -->
+                <li class="nav-item active">
+                    <a id="login" class="nav-link xyz" href="/root/login">
+                    Login
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-closed" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2zm1 13h8V2H4v13z"/>
+                        <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"/>
+                    </svg>
+                    </a>
+                </li> 
+                <!-- // --------------------------------------------- SIGNUP ------------------------------------------------- // -->
+                <li class="nav-item active">
+                    <a id="signUp" class="nav-link xyz" href="/root/signup">
+                    SignUp
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-closed-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4 1a1 1 0 0 0-1 1v13H1.5a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2a1 1 0 0 0-1-1H4zm2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                    </a>
+                </li> 
+    
+            <!---------------------------------------------------UserName----------------------------------------------- -->
+            <li class="nav-item active "> 
+                <span class="xyz nav-link" id="user"></span>
+            </li>
+            
+            <!-- // --------------------------------------------- LOGOUT ------------------------------------------------- // -->    
+                <li class="nav-item active">
+                    <a id="logout" class="nav-link xyz" href="/root/logout">
+                    Logout
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-open" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M1 15.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM11.5 2H11V1h.5A1.5 1.5 0 0 1 13 2.5V15h-1V2.5a.5.5 0 0 0-.5-.5z"/>
+                        <path fill-rule="evenodd" d="M10.828.122A.5.5 0 0 1 11 .5V15h-1V1.077l-6 .857V15H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117z"/>
+                        <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z"/>
+                    </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- // --------------------------------------------- NAV BAR ENDS ------------------------------------------------- // -->
+    <br>
+    <br>
+    <br>
+   
+    <nav class="accordion arrows">
+        <header class="box">
+            <label for="acc-close" class="box-title text-center h2">Menu</label>
+        </header>
+        <input type="radio" name="accordion" id="cb1" class="arrow" />
+        <section class="box">
+            <label class="box-title foodType" for="cb1">Starters</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Spring Roll </div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">80</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/spring-rolls.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Paneer Tikka </div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">120</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/paneer-tikka.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Momos </div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">60 </div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/Momos.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+        
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Fries</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">90 </div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/fries.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        <input type="radio" name="accordion" id="cb2" />
+        <section class="box">
+            <label class="box-title foodType" for="cb2">Main Course</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Masala Dosa </div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">140</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/masalaDosa.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Vada Sambhar </div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">120</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/vadaSambhar.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Rajma Chawal</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">140</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/rajmaChawal.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+        
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Paneer + Naan/Roti</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">180</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/paneerNaan.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <input type="radio" name="accordion" id="cb3" />
+        <section class="box">
+            <label class="box-title foodType" for="cb3">Dessert</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">IceCream</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">100</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/ice-cream.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">GulabJamun</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">50</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/gulab-jamun.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Gajar Halwa</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">100</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/gajar_halwa.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Dal Halwa</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">120</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/halwa.jpeg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <input type="radio" name="accordion" id="cb4" />
+        <section class="box">
+            <label class="box-title foodType" for="cb4">Drinks</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Soft Drinks</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">100</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/soft.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Juice</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">50</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/juice.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Chocolate Shake</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">80</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/chocoshake.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+        
+                <br>
+                <div class="row">
+                    <div class="col-4 name">
+                        <div class="content">Special Oreo Shake</div>
+                    </div>
+                    <div class="col-2 price">
+                        <div class="content">100</div>
+                    </div>
+                    <div class="col 4">
+                        <img src="../Images/oreo.jpg" width="120" height="100">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark add">Add</button>
+                    </div>
+                    <div class="cnt">
+                        <button class="dec">-</button>
+                        <span class="update">1</span>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <input type="radio" name="accordion" id="acc-close" />
+
+        
+    </nav>
+    
+    <script src="script.js"></script>
+</body>
+</html>

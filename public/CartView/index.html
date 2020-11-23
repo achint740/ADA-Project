@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ORDER</title>
+</head>
+<body id="body">
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <div class="wrapper">
+            <h2 class="header">Cart Items</h2>
+            <br><br>
+            <table class="table table-striped" id="mycart">
+                
+            </table>
+        </div>
+        <button type="button" id="book" class="btn btn-success text-light">Confirm Order</button> 
+        <button type="button" id="backmenu" class="btn btn-info text-light"><a href="../Menu/viewMenu.html">Back To Menu</a></button>
+
+    </div>
+    <!-----------------------------------------------------Modal For Confirm Booking----------------------------------------------->
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="close">&times;</button>
+                <h2>Order Confirmation</h2>
+            </div>
+            <div class="modal-body">
+                <label for="modalName" class="column-1">Username</label>
+                <input type="text" class="column" id="modalName" name="username" readonly="true"></input>
+
+                <br>
+
+                <label for="address" class="column-1">Address</label>
+                <textarea name="address" id="address" cols="20" rows="5"></textarea>
+
+                <br>
+
+                <label for="modalTable" class="column-1">Date</label>
+                <input type="date" class="column" id="modalDate"  name="date" readonly="true"></input>
+
+                <br>
+
+                <label for="modalCost" class="column-1">Cost</label>
+                <input type="text" class="column" id="modalCost" name="cost" readonly="true">
+                
+                <br>
+                
+                <button type="submit" id="modalSubmit" class="btn">Confirm Order & Pay</button>
+            </div>
+        </div>
+
+    </div>
+    <button id="cart"  onclick="refresh();">Show Cart</button>
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Table</title>
+    <!-- BootStrap Use Link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/reservation.css">
+
+    
+</head>
+<body>
+
+    <h3>Book Table</h3>
+    {{!-- <form action="/reservation/bookTable" method="POST"> --}}
+        <input type="date" name="date1" id="date1">
+        <br>
+        <br>
+        <input type="time" name="time1" id="time1">
+        <br>
+        <br>
+        <br>
+        <fieldset>
+            <select  class="person" name='members' id="members" required>
+                <option value="">How many persons?</option>
+                <option value="1-Person">1 Person</option>
+                <option value="2-Persons">2 Persons</option>
+                <option value="3-Persons">3 Persons</option>
+                <option value="4-Persons">4 Persons</option>
+                <option value="5-Persons">5 Persons</option>
+                <option value="6-Persons">6 Persons</option>
+            </select>
+        </fieldset>
+        <input type="submit" placeholder="Submit" id="book">
+
+    {{!-- </form> --}}
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="close">&times;</button>
+                <h2>Confirm Booking</h2>
+            </div>
+            <div class="modal-body">
+                <label for="modalName" class="column-1">Username</label>
+                <input type="text" class="column" id="modalName" name="username" readonly="true"></input>
+
+                <label for="modalTable" class="column-1">Table</label>
+                <input type="text" class="column" id="modalTable"  name="tableId" readonly="true"></input>
+                <br>
+
+                <label for="modalTable" class="column-1">Date</label>
+                <input type="date" class="column" id="modalDate"  name="date" readonly="true"></input>
+
+                <label for="modalCost" class="column-1">Cost</label>
+                <input type="text" class="column" id="modalCost" name="cost" readonly="true">
+                
+                <br>
+
+                <label for="modalStartTime" class="column-1"> Start Time</label>
+                <input type="time" class="column" id="modalStartTime" name="startTime" readonly="true" >
+
+                <label for="modalEndTime" class="column-1">End Time</label>
+                <input type="time" class="column" id="modalEndTime" name="endTime" readonly="true">
+
+                <br>
+
+                
+
+                <button type="submit" id="modalSubmit" class="btn">Confirm Booking</button>
+            </div>
+        </div>
+
+    </div>
+    <a href="/reservation/status">Check Status</a>
+    
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/reservation.js"></script>
+</body>
+</html>

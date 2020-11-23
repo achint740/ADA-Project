@@ -1,0 +1,46 @@
+<table align="center">
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Job Title</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Residential Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each employee as |item|}}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.jobTitle}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.phoneNumber}}</td>
+                <td>{{item.resAdd}}</td>
+                <td>  </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<table align="center">
+    <thead>
+        <tr>
+            <th>Item Id</th>
+            <th>Dish Name</th>
+            <th>Price</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each menu as |item|}}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.itemName}}</td>
+                <td>{{item.itemPrice}}</td>
+                <td>{{item.itemType}}</td>
+                <td> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateMenu"> Update </button> </td>
+                <td> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteItem"> Delete </button> </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

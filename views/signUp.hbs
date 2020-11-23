@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/scripts/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            {{!-- <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign Up</label> --}}
+            <input id="tab-2" type="radio" name="tab" class="sign-up" checked> <label for="tab-2" class="tab " id="header">Sign Up</label>
+            {{!-- <div class="hr"></div> --}}
+            <div class="login-form">
+                <form action="/root/signup" method="POST">
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input" name="username" required>
+                        </div>
+                        <div class="group">
+                            <label for="name" class="label">Name</label>
+                            <input id="name" type="text" class="input" name="name" required>
+                        </div>
+
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" name="password" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="mail" class="label">Email Address</label>
+                            <input id="mail" type="text" name="email" class="input" required>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign Up">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1"><a id="foot" href="/root/login">Already Member?Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
